@@ -1,0 +1,42 @@
+<% layout("/layouts/boilerplate")%>
+    <div class="row mt-3">
+        <div class="col-8 offset-2">
+            <br><br>
+        <h2>Create New Listings</h2>
+         <form method="POST" action="/listings" novalidate class="needs-validation" enctype="multipart/form-data"> <!--//so that default web application not applied -->
+        <div class="mb-3">
+        <lable for="title" class="form-label">Title</lable>
+        <input name="listing[title]" placeholder="name of property" class="form-control" required>
+        </div>
+        <div class="mb-3">
+        <lable for="description" class="form-label">Description</lable>
+        <textarea name="listing[description]" class="form-control"></textarea>
+        </div>
+        
+        <div class="mb-3">
+            <lable for="img" class="form-label">Image</lable>
+            <input name="listing[image]" placeholder="url of image" type="file" class="form-control">
+            </div> 
+        <div class="row">
+        <div class="mb-3 col-md-4">
+        <lable for="price" class="form-label">Price</lable>
+        <input name="listing[price]" placeholder="price" class="form-control" required>
+        </div>
+        <div class="mb-3 col-md-8">
+            <lable for="country" class="form-label">Country</lable> 
+         <input name="listing[country]" placeholder="country" class="form-control" required>
+         </div>
+         </div>
+        <div class="mb-3">
+        <lable for="location" class="form-label">Location</lable>
+         <input name="listing[location]" placeholder="where is the property" class="form-control" required>
+         </div>
+        
+         
+         <button class="btn btn-dark add-btn">Create listing</button>
+         <br><br>
+    </form>
+    </div>
+    </div>
+   
+    
